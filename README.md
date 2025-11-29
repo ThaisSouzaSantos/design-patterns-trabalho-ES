@@ -8,8 +8,8 @@ Padrões de projeto (design patterns) são soluções típicas para problemas co
 
 O conteúdo conceitual e a base teórica para a explicação de cada padrão foram obtidos e referenciados a partir do catálogo online:
 
-* ** [1] REFACTORING.GURU.** **Padrões de Projeto (Design Patterns)**. Disponível em: <https://refactoring.guru/pt-br/design-patterns>. Acesso em: 25 nov. 2025.
-* ** [2] GOOGLE. Gemini (Modelo de linguagem grande). Resposta gerada à consulta "padrões de projeto, como implementar" e auxílio na geração de código em 25 de novembro de 2025.
+* **[1] REFACTORING.GURU.** **Padrões de Projeto (Design Patterns)**. Disponível em: <https://refactoring.guru/pt-br/design-patterns>. Acesso em: 25 nov. 2025.
+* **[2] GOOGLE. Gemini** **(Modelo de linguagem grande)**. Resposta gerada à consulta "padrões de projeto, como implementar" e auxílio na geração de código em 25 de novembro de 2025.
 
 ---
 ## 1. Padrão Criacional: Singleton
