@@ -1,4 +1,4 @@
-# 🎓 Trabalho de Padrões de Projeto (Design Patterns)
+# Trabalho de Padrões de Projeto (Design Patterns)!
 
 ## Introdução
 
