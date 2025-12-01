@@ -1,5 +1,34 @@
-import copy
+# 1. Padrão Criacional: Prototype
+## Objetivo geral:
+Os padrões Criacionais fornecem vários mecanismos de criação de objetos, que aumentam a flexibilidade e reutilização de código já existente. [1]
 
+## Observação:
+Nem todos os objetos podem ser copiados dessa forma porque alguns campos de objeto podem ser privados e não serão visíveis fora do próprio objeto. [1]
+
+## Prototype:
+O Prototype é um padrão de projeto **Criacional** que permite copiar objetos existentes sem fazer seu código ficar dependente de suas classes. [1]
+
+### Qual Problema Resolve?
+Cria novos objetos **copiando** uma instância existente (o protótipo), em vez de passar por um processo de criação complexo ou caro. Isso é especialmente útil quando precisa-se criar muitos objetos que são quase idênticos ou que dependem de uma configuração inicial complexa.
+
+### Solução:
+O padrão define uma interface para clonagem. O objeto protótipo (a instância original) sabe como se clonar. O código cliente simplesmente solicita a clonagem ao protótipo, sem saber nada sobre a complexidade interna de sua criação.
+
+### UML (Propósito Geral):
+O diagrama mostra a interface `Prototype` com o método `clone()` e as classes concretas que a implementam.
+
+```mermaid
+classDiagram
+    class Prototype {
+        <<Interface>>
+        + clone()
+    }
+    class ComponenteConcreto {
+        + clone()
+    }
+    
+    Prototype <|-- ComponenteConcreto : implementa
+    Note right of ComponenteConcreto: O componente sabe como se clonar
 # Objeto Aninhado (Referência Circular)
 class Cliente:
     """ Representa o objeto Cliente, que pode ter uma referência de volta ao Pedido. """
