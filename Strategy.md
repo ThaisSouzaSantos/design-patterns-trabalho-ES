@@ -9,10 +9,10 @@ O Padrão Strategy é a melhor maneira de substituir algoritmos condicionais com
 ## Strategy:
 O Strategy é um padrão de projeto **Comportamental** que define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam. [1]
 
-### Qual problema resolve?
+##Qual problema resolve?
 Quando uma classe tem vários comportamentos ou algoritmos que podem ser usados, e é necessário poder **alternar** entre eles em tempo de execução de forma limpa, sem modificar o código do cliente.
 
-### Solução:
+## solução:
 A solução envolve três componentes principais:
 1.  **Contexto:** O objeto que mantém uma referência à estratégia atual e delega o trabalho a ela.
 2.  **Estratégia (Interface):** Uma interface comum que define o método que todos os algoritmos devem implementar.
@@ -43,7 +43,7 @@ classDiagram
     Estrategia <|-- EstrategiaB
 ````
 _____________________
-#Exemplo de Aplicação: Múltiplas Formas de Envio
+# Exemplo de Aplicação: Múltiplas Formas de Envio
 
 ## Descrição do problema:
 Um sistema de processamento de pedidos precisa calcular o custo de envio para um cliente. O custo varia dependendo da forma de envio escolhida (Expresso, Normal ou Econômico), e essa escolha pode mudar a qualquer momento.
