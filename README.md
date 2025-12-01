@@ -31,7 +31,7 @@ O conteúdo conceitual e a base teórica para a explicação de cada padrão (In
 
 Este trabalho foi auxiliado pelo modelo de linguagem grande **Gemini**, desenvolvido pelo Google, para a estruturação do conteúdo e dos códigos, e as geração das descrições das explicações.
 
-* GOOGLE. **Gemini (Modelo de linguagem grande)**. Resposta gerada à consulta "escolha três padrões de projeto, crie repositório" e auxílio na geração de código em 25 de novembro de 2025.
+* GOOGLE. **Gemini (Modelo de linguagem grande)**. Resposta gerada à consulta "padrões de projetos: design patterns, e auxílio na geração de códigos", em 25 de novembro de 2025.
 
 ---
 ## ⚖️ Licença
