@@ -11,9 +11,9 @@ Eles fornecem um vocabulário comum e uma estrutura de alto nível para a organi
 
 | Categoria | Padrão Escolhido | Implementação (Linguagem) | Detalhes no GitHub |
 | :--- | :--- | :--- | :--- |
-| **Criacional** | Prototype (Protótipo) | Python | [Link para Issue #1: Prototype](<https://github.com/ThaisSouzaSantos/design-patterns-trabalho-ES/issues>) |
-| **Estrutural** | Adapter (Adaptador) | Python | [Link para Issue #2: Adapter](<SUA_URL_DA_ISSUE_2>) |
-| **Comportamental** | Strategy (Estratégia) | Python | [Link para Issue #3: Strategy](<SUA_URL_DA_ISSUE_3>) |
+| **Criacional** | Prototype (Protótipo) | Python 
+| **Estrutural** | Adapter (Adaptador) | Python 
+| **Comportamental** | Strategy (Estratégia) 
 
 O código de cada padrão está localizado nas respectivas pastas (`criacionais`, `estruturais`, `comportamentais`).
 
