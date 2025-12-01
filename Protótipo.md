@@ -11,7 +11,7 @@ O Prototype é um padrão de projeto **Criacional** que permite copiar objetos e
 ### Qual Problema Resolve?
 Cria novos objetos **copiando** uma instância existente (o protótipo), em vez de passar por um processo de criação complexo ou caro. Isso é especialmente útil quando precisa-se criar muitos objetos que são quase idênticos ou que dependem de uma configuração inicial complexa.
 
-### Solução:
+### solução:
 O padrão define uma interface para clonagem. O objeto protótipo (a instância original) sabe como se clonar. O código cliente simplesmente solicita a clonagem ao protótipo, sem saber nada sobre a complexidade interna de sua criação.
 
 ### UML (Propósito Geral):
@@ -30,20 +30,20 @@ classDiagram
     Note right of ComponenteConcreto: O componente sabe como se clonar
 ```
 _____
-# Exemplo de Aplicação: Gerenciador de Pedidos de E-commerce
+# Exemplo de aplicação: Gerenciador de pedidos de E-commerce
 
 ## Descrição do problema:
 Um sistema de e-commerce precisa criar novos pedidos que são, na maioria das vezes, cópias exatas de um "Pedido Modelo" ou de um pedido anterior (por exemplo, um pedido recorrente).
 
-## O Problema do Pedido:
+## O problema do pedido:
 Criar um novo objeto Pedido do zero é caro e complicado, pois envolve configurar uma lista complexa de itens, impostos, informações de envio e referências a objetos de cliente.
 
-## A Solução com Prototype:
+## A solução com prototype:
 Em vez de reconfigurar tudo, usamos o Prototype para clonar um Pedido Modelo (o protótipo).
 
-- Cópia Rasa (copy.copy): Usada para clonar o pedido rapidamente, mas mantendo a referência ao mesmo objeto Cliente. Se a informação do cliente mudar, muda para todos os pedidos clonados a partir do protótipo (o que pode ser um erro!).
+- Cópia rasa (copy.copy): Usada para clonar o pedido rapidamente, mas mantendo a referência ao mesmo objeto Cliente. Se a informação do cliente mudar, muda para todos os pedidos clonados a partir do protótipo (o que pode ser um erro!).
 
-- Cópia Profunda (copy.deepcopy): Usada para criar um novo pedido completamente independente, clonando o cliente e todos os itens aninhados. Se o cliente for alterado, apenas o novo pedido é afetado.
+- Cópia profunda (copy.deepcopy): Usada para criar um novo pedido completamente independente, clonando o cliente e todos os itens aninhados. Se o cliente for alterado, apenas o novo pedido é afetado.
 
 ### Implementação em Python
 ```
