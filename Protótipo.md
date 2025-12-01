@@ -17,7 +17,7 @@ O padrão define uma interface para clonagem. O objeto protótipo (a instância 
 ### UML (Propósito Geral):
 O diagrama mostra a interface `Prototype` com o método `clone()` e as classes concretas que a implementam.
 
-```mermaid
+```
 classDiagram
     class Prototype {
         <<Interface>>
@@ -154,3 +154,4 @@ if __name__ == "__main__":
     # O cliente_profundo agora aponta para o novo PedidoModelo clonado (1003).
     print(f"Referência circular no Pedido Profundo aponta para o Pedido ID: {pedido_profundo.ref_cliente.pedidos[0].id_base}")
     # Saída esperada: 1003
+```
