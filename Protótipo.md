@@ -46,7 +46,8 @@ Em vez de reconfigurar tudo, usamos o Prototype para clonar um Pedido Modelo (o 
 - Cópia profunda (copy.deepcopy): Usada para criar um novo pedido completamente independente, clonando o cliente e todos os itens aninhados. Se o cliente for alterado, apenas o novo pedido é afetado.
 
 ### Implementação em Python
-```
+
+``` Python
 # Objeto Aninhado (Referência Circular)
 class Cliente:
     """ Representa o objeto Cliente, que pode ter uma referência de volta ao Pedido. """
