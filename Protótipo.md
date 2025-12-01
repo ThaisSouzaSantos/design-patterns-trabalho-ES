@@ -16,8 +16,7 @@ O padrão define uma interface para clonagem. O objeto protótipo (a instância 
 
 ### UML (Propósito Geral):
 O diagrama mostra a interface `Prototype` com o método `clone()` e as classes concretas que a implementam.
-
-```
+```mermaid
 classDiagram
     class Prototype {
         <<Interface>>
@@ -29,6 +28,25 @@ classDiagram
     
     Prototype <|-- ComponenteConcreto : implementa
     Note right of ComponenteConcreto: O componente sabe como se clonar
+```
+_____
+# Exemplo de Aplicação: Gerenciador de Pedidos de E-commerce
+
+## Descrição do problema:
+Um sistema de e-commerce precisa criar novos pedidos que são, na maioria das vezes, cópias exatas de um "Pedido Modelo" ou de um pedido anterior (por exemplo, um pedido recorrente).
+
+## O Problema do Pedido:
+Criar um novo objeto Pedido do zero é caro e complicado, pois envolve configurar uma lista complexa de itens, impostos, informações de envio e referências a objetos de cliente.
+
+## A Solução com Prototype:
+Em vez de reconfigurar tudo, usamos o Prototype para clonar um Pedido Modelo (o protótipo).
+
+- Cópia Rasa (copy.copy): Usada para clonar o pedido rapidamente, mas mantendo a referência ao mesmo objeto Cliente. Se a informação do cliente mudar, muda para todos os pedidos clonados a partir do protótipo (o que pode ser um erro!).
+
+- Cópia Profunda (copy.deepcopy): Usada para criar um novo pedido completamente independente, clonando o cliente e todos os itens aninhados. Se o cliente for alterado, apenas o novo pedido é afetado.
+
+### Implementação em Python
+```
 # Objeto Aninhado (Referência Circular)
 class Cliente:
     """ Representa o objeto Cliente, que pode ter uma referência de volta ao Pedido. """
