@@ -9,11 +9,11 @@ Eles fornecem um vocabulário comum e uma estrutura de alto nível para a organi
 
 ## 🛠️ Padrões Implementados
 
-| Categoria | Padrão Escolhido | Implementação (Linguagem) | Detalhes no GitHub |
-| :--- | :--- | :--- | :--- |
+| Categoria | Padrão Escolhido | Implementação (Linguagem)  |
+| :--- | :--- | :--- |
 | **Criacional** | Prototype (Protótipo) | Python 
 | **Estrutural** | Adapter (Adaptador) | Python 
-| **Comportamental** | Strategy (Estratégia) 
+| **Comportamental** | Strategy (Estratégia) | Python 
 
 O código de cada padrão está localizado nas respectivas pastas (`criacionais`, `estruturais`, `comportamentais`).
 
