@@ -25,7 +25,7 @@ O código de cada padrão está localizado nas respectivas pastas (`criacionais`
 
 O conteúdo conceitual e a base teórica para a explicação de cada padrão (Intenção, Problema e Solução) foram obtidos e referenciados a partir do catálogo online:
 
-* **REFACTORING.GURU.** **Padrões de Projeto (Design Patterns)**. Disponível em: <https://refactoring.guru/pt-br/design-patterns>. Acesso em: 25 nov. 2025.
+- [1] REFACTORING.GURU.** **Padrões de Projeto (Design Patterns)**. Disponível em: <https://refactoring.guru/pt-br/design-patterns>. Acesso em: 25 nov. 2025.
 
 ### II. Geração de Conteúdo e Código (LLM)
 
